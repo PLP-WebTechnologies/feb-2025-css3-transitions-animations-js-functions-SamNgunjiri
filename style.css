@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+
+.controls {
+  margin-bottom: 1.5rem;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.image-container img {
+  width: 150px;
+  height: 150px;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Animation classes */
+.spin {
+  animation: spin 2s linear infinite;
+}
+
+.bounce {
+  animation: bounce 1s ease infinite;
+}
+
+.scale {
+  animation: scale 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
+}
+
+@keyframes scale {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+}
